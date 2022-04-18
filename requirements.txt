@@ -1,0 +1,5 @@
+python-openstackclient
+python-neutronclient
+python-designateclient
+python-mistralclient
+python-octaviaclient

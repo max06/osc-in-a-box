@@ -1,0 +1,20 @@
+# This is a configuration file for the openstack-cli.
+# In here, you should only add the common values, non-secrets.
+#
+# You can add multiple cloud configurations here and enable them by setting an
+# Environment variable called `OS_CLOUD` - which is by default set to `mycloud`
+#
+# If you have more than one cloud account, add the cloud entry to the clouds
+# section of your existing file and you can refer to them by name with
+# OS_CLOUD=foo or --os-cloud=foo
+
+public-clouds:
+  mycloud:
+    auth:
+      auth_url: https://identity.mycloud.cloud/v3
+      user_domain_name: "Default"
+    region_name: "fra"
+    interface: "public"
+    identity_api_version: 3
+
+# This file can and should be commited.
